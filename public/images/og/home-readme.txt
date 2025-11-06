@@ -1,0 +1,1 @@
+Place your hero image files here, e.g. home.jpg and home@2x.jpg. For best results use 1920x520 JPG/WebP.

@@ -13,6 +13,11 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web([
             \App\Http\Middleware\SetLocale::class,
+            \App\Http\Middleware\SecurityHeaders::class,
+            \App\Http\Middleware\LogVisit::class,
+        ]);
+        $middleware->alias([
+            'admin.auth' => \App\Http\Middleware\EnsureAdminAuthenticated::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
