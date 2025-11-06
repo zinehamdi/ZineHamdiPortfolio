@@ -1,4 +1,46 @@
-*.log
+# Laravel & Node
+/vendor/
+/node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Laravel build/runtime artifacts
+/public/hot
+/public/storage
+/public/build/
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# IDE/editor
+.idea/
+.vscode/
+.fleet/
+.DS_Store
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Composer
+composer.phar
+
+# Coverage/cache
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# OS/other
+Thumbs.db
+
+# Project-specific large artifact
+zineportfolioreadytohostinger.zip*.log
 .DS_Store
 .env
 .env.backup
