@@ -1,71 +1,72 @@
 <?php
 
 return [
-    'page_title' => 'Services',
-    'page_desc' => 'De l’idée au lancement : applis Laravel, contenu, SEO et intégrations IA.',
-    'cta_quote' => 'Obtenir un devis',
-    'cards' => [
-        'site-management' => [
+    'section_label' => 'Ce Que Je Livre',
+    'title' => 'Services de Développement Premium',
+    'intro' => 'Des plateformes web d\'entreprise à l\'automatisation IA, je livre des solutions complètes qui génèrent de vrais résultats business. Chaque service combine excellence technique et réflexion stratégique.',
+    'cta_select' => 'Sélectionner',
+    'discount_badge' => 'Prix réduits de 30%',
+    'services' => [
+        [
+            'title' => 'Développement Full-Stack Laravel',
+            'desc' => 'Applications web de niveau entreprise avec backends robustes, frontends intuitifs et architecture évolutive. Livraison complète du projet de la conception de la base de données au déploiement.',
+        ],
+        [
+            'title' => 'Plateformes E-commerce & Multi-vendeurs',
+            'desc' => 'Boutiques en ligne personnalisées et solutions marketplace avec intégration des paiements, gestion des stocks et tableaux de bord vendeurs. Spécialisé dans la conformité des marchés du Golfe.',
+        ],
+        [
+            'title' => 'Automatisation Business Alimentée par IA',
+            'desc' => 'Automatisation intelligente des flux de travail, chatbots et outils assistés par IA pour rationaliser les opérations. Réduisez le travail manuel et développez votre entreprise efficacement.',
+        ],
+        [
+            'title' => 'Développement & Intégration d\'API',
+            'desc' => 'APIs RESTful, intégrations tierces et architecture microservices. Connectez vos systèmes de manière transparente avec des endpoints sécurisés et documentés.',
+        ],
+        [
+            'title' => 'Branding Premium & Design d\'Étiquettes',
+            'desc' => 'Emballage d\'exportation d\'huile d\'olive, étiquettes de produits et identité de marque pour les marchés du Golfe. Spécialisé dans le positionnement luxe et la typographie arabe.',
+        ],
+        [
+            'title' => 'Systèmes de Réservation',
+            'desc' => 'Plateformes de marché de services avec planification de rendez-vous, gestion des prestataires et notifications automatisées. Parfait pour les entreprises de services multi-vendeurs.',
+        ],
+    ],
+    'sections' => [
+        'management' => [
             'title' => 'Gestion de site',
-            'summary' => 'Maintenance, mises à jour, sauvegardes et sécurité.',
+            'items' => [
+                'Surveillance disponibilité & performance',
+                'Mises à jour sécurité et sauvegardes',
+                'Mises à jour de contenu et publication',
+                'Analytique et reporting',
+            ],
         ],
-        'laravel-development' => [
+        'laravel' => [
             'title' => 'Développement Laravel',
-            'summary' => 'Fonctionnalités sur mesure, API, dashboards, facturation…',
+            'items' => [
+                'Nouvelles applis et développement de fonctionnalités',
+                'APIs et intégrations',
+                'Paiements et abonnements',
+                'Tests et mise en place CI/CD',
+            ],
         ],
-        'ai-prompting' => [
-            'title' => 'Intégrations IA',
-            'summary' => 'Chatbots, génération de contenu et automatisation avec des LLMs modernes.',
-        ],
-        'social-content' => [
-            'title' => 'Contenu social',
-            'summary' => 'Planifier, rédiger et publier du contenu qui convertit.',
-        ],
-        'seo' => [
-            'title' => 'SEO',
-            'summary' => 'SEO technique, on‑page et performance pour croître en organique.',
+        'ai' => [
+            'title' => 'IA & Workflows de contenu',
+            'items' => [
+                'Conception de prompts et outils',
+                'Pipelines de contenu pour social et blog',
+                'Automatisations et assistants',
+                'Production multilingue',
+            ],
         ],
     ],
     'pricing' => [
-        'title' => 'Tarifs',
-        'subtitle' => 'Des options flexibles adaptées à votre budget.',
-        'tiers' => [
-            [
-                'name' => 'Starter',
-                'price' => '999',
-                'features' => ['1‑3 pages','Design responsive','SEO basique','Formulaire de contact'],
-                'slug' => 'starter',
-            ],
-            [
-                'name' => 'Smart',
-                'price' => '1 999',
-                'features' => ['Jusqu’à 8 pages','Blog/Portfolio','SEO amélioré','Analytics'],
-                'slug' => 'smart',
-            ],
-            [
-                'name' => 'Pro',
-                'price' => '3 499',
-                'features' => ['Pages illimitées','E‑commerce/Paiements','SEO avancé','Intégrations'],
-                'slug' => 'pro',
-                'featured' => true,
-            ],
-        ],
         'badge_featured' => 'Le plus populaire',
     ],
-    'promo' => [
-        'title' => 'Pourquoi travailler avec moi',
-        'subtitle' => 'Un partenaire full‑stack fiable, focalisé sur vos résultats — pas seulement le code.',
-        'benefits' => [
-            ['title' => 'Livraison de bout en bout', 'desc' => 'De la stratégie et l’UX aux apps Laravel, hébergement et maintenance.'],
-            ['title' => 'Agile et transparent', 'desc' => 'Courtes itérations, démos claires et points réguliers pour garder le contrôle.'],
-            ['title' => 'IA utile et pragmatique', 'desc' => 'Intégrations IA pratiques pour automatiser et réduire les coûts — sans hype.'],
-        ],
-        'metrics' => [
-            'projects' => 'projets livrés',
-            'experience' => 'd’expérience',
-            'satisfaction' => 'satisfaction client',
-            'response' => 'temps de réponse moyen',
-        ],
-        'cta' => 'Obtenir un devis',
+    'meta' => [
+        'title' => 'Services — Gestion de site, développement Laravel, IA & contenus',
+        'description' => 'Gestion, applis Laravel propres, et workflows de contenu pilotés par l’IA — livrés vite et maintenus proprement.',
+        'og_image' => '/images/og/services.jpg',
     ],
 ];

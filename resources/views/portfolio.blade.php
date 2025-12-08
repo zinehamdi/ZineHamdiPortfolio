@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.portfolio')
 
-@section('title', __('portfolio.title').' – '.__('common.brand'))
+@section('title', __('portfolio.title') . ' – ' . __('common.brand'))
 @section('meta_description', __('nav.meta_description'))
 
 @section('content')

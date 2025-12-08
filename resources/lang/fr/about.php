@@ -1,54 +1,58 @@
 <?php
 
 return [
-    'meta' => [
-        'title' => 'À propos',
-        'description' => 'Mon parcours, mes valeurs et ma façon de travailler.',
-        'og_image' => 'images/og/about.jpg',
+    'badge' => 'QUI JE SUIS',
+    'title' => 'Développeur Laravel &',
+    'title_gradient' => 'Architecte de Solutions Digitales',
+    'badge_status' => 'Ouvert aux Projets',
+    'description' => 'Je suis Hamdi Zine, développeur full-stack Laravel spécialisé dans l\'automatisation business alimentée par IA et les expériences digitales premium. Basé à Kairouan, Tunisie, je livre des plateformes web de niveau entreprise, des solutions e-commerce et du branding pour l\'export d\'huile d\'olive pour des clients dans la région du Golfe. Avec une expertise éprouvée dans les marketplaces multi-vendeurs, les systèmes de réservation et les workflows automatisés, j\'apporte l\'expérience d\'une équipe de développement complète en tant que professionnel dédié.',
+    'skills_title' => 'Compétences Principales',
+    'skills' => [
+        'Expert Laravel',
+        'Vue.js & Tailwind',
+        'Automatisation IA',
+        'Plateformes E-commerce',
+        'Systèmes Multi-vendeurs',
+        'Développement API',
     ],
-    // Keys used by sections/about.blade.php
-    'title' => 'À propos de moi',
-    'subtitle' => "Je suis Hamdi Zine — développeur full-stack, chef de projet et bâtisseur digital",
-    'bio' => "Basé en Tunisie, j’apporte plus de 5 ans d’expérience en développement web, en gestion de projet agile et en intégration d’outils IA. Ma mission : offrir aux entrepreneurs des solutions complètes et abordables, sans les coûts d’une grande équipe.",
-    'what_i_do' => 'Ce que je fais',
-    'metrics' => [
-        'years' => 'ANNÉES D’EXPÉRIENCE',
-        'projects' => 'PROJETS LIVRÉS',
-        'partners' => 'PARTENAIRES SATISFAITS',
-        'certs' => 'CERTIFICATIONS',
+    'process_title' => 'Comment Je Travaille',
+    'process' => [
+        ['number' => '01', 'title' => 'Découvrir', 'desc' => 'Comprendre vos objectifs business et exigences techniques.'],
+        ['number' => '02', 'title' => 'Construire', 'desc' => 'Développer des solutions évolutives avec du code propre et les meilleures pratiques.'],
+        ['number' => '03', 'title' => 'Lancer', 'desc' => 'Déployer avec documentation complète, formation et support continu.'],
     ],
-    'do' => [
-        'webdev' => 'DÉVELOPPEMENT WEB',
-        'webdev_desc' => 'Solutions Laravel, Vue et Angular rapides et sécurisées.',
-        'pm' => 'GESTION DE PROJET',
-        'pm_desc' => 'Méthodes agiles, backlog clair, sprints organisés et résultats.',
-        'ai' => 'INTÉGRATION IA',
-        'ai_desc' => 'Chatbots personnalisés et automatisations pour booster votre business.',
-        'strategy' => 'STRATÉGIE D’AFFAIRES',
-        'strategy_desc' => 'Transformer vos idées en projets concrets, de l’idée au lancement.',
-    ],
-    // Legacy keys kept for other pages, not used by this section anymore
-    'intro' => 'Je conçois des applis Laravel et des expériences propulsées par l’IA, centrées performance et UX.',
+    'cta_cv' => 'Télécharger Mon CV',
+    'cta_cv_mobile' => 'Télécharger le CV',
+    'title_old' => 'À propos',
+    'intro' => "Je suis Zine — une équipe complète à moi seul, j'aide les petites entreprises à lancer et grandir rapidement et clairement.",
     'sections' => [
         'mission' => [
             'title' => 'Mission',
-            'body' => 'Aider les entreprises à livrer vite des produits accessibles et efficaces.',
+            'body' => 'Livrer des résultats premium avec une empreinte légère : applis Laravel propres, design system Tailwind v4, contenus multilingues et automatisations qui font gagner du temps et de l’argent.'
         ],
         'bio' => [
-            'title' => 'Bio',
-            'body' => 'Développeur full‑stack avec expérience web, contenu et intégrations IA.',
+            'title' => 'Parcours pratique',
+            'body' => 'De la gestion de sites à la création d’outils et de flux de contenu, j’assure l’exécution de bout en bout — stratégie, build, déploiement, itérations.'
         ],
         'cta' => [
-            'title' => 'Travaillons ensemble',
-            'body' => 'Parlez‑moi de votre projet pour une estimation rapide.',
+            'title' => 'On passe à l’action ?',
+            'body' => 'Partagez votre objectif. Je propose la plus petite prochaine étape efficace — sans bla-bla.'
         ],
     ],
-    'skills' => [
-        'Laravel','Livewire','Tailwind','Vue','Pest','MySQL','Stripe','OpenAI'
-    ],
+    'skills' => ['Laravel', 'Livewire', 'PHP', 'JavaScript/TypeScript', 'Tailwind CSS', 'Vite', 'Git', 'Outils IA'],
     'timeline' => [
-        [ 'year' => '2018', 'title' => 'Débuts sur des applis Laravel' ],
-        [ 'year' => '2021', 'title' => 'Première intégration IA livrée' ],
-        [ 'year' => '2024', 'title' => 'Consultant indépendant' ],
+        ['year' => '2019', 'title' => 'Premiers sites livrés'],
+        ['year' => '2021', 'title' => 'Rythme client soutenu'],
+        ['year' => '2023', 'title' => 'Workflows IA intégrés'],
+        ['year' => 'Aujourd’hui', 'title' => 'Une équipe complète en solo'],
+    ],
+    'metrics' => [
+        'projects' => 'Projets livrés',
+        'avg_days' => 'Jours moyens de livraison',
+    ],
+    'meta' => [
+        'title' => 'À propos de Zine — exécution légère et efficace',
+        'description' => "Stratégie, build, déploiement, itération. Un parcours pratique sur sites, outils et contenus.",
+        'og_image' => '/images/og/about.jpg',
     ],
 ];

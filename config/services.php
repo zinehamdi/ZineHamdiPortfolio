@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'crm' => [
+        'endpoint' => env('CRM_API_ENDPOINT'),
+        'token' => env('CRM_API_TOKEN'),
+        'timeout' => env('CRM_API_TIMEOUT', 5),
+    ],
+
 ];

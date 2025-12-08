@@ -5,8 +5,8 @@ export function portfolioTabs() {
     is(k) { return this.tab === k; },
     btnClass(k) {
       return this.is(k)
-        ? 'text-[#1b1b18] bg-[#FFA400]'
-        : 'text-[#1b1b18]/60 hover:text-[#1b1b18] hover:bg-white/50';
+        ? 'bg-[#00FF88] text-[#0a0a0f] border-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]'
+        : 'text-[#A0A0A0] border-white/10 bg-white/5 hover:bg-white/10 hover:text-white';
     },
     ariaSelected(k) { return this.is(k).toString(); },
     showFor(cat) { return this.is('all') || this.is(cat); },

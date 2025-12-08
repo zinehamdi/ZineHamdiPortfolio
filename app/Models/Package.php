@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Package extends Model
 {
@@ -23,4 +24,9 @@ class Package extends Model
         'is_featured' => 'boolean',
         'is_active' => 'boolean',
     ];
+
+    public function services(): BelongsToMany
+    {
+        return $this->belongsToMany(Service::class, 'service_package')->withTimestamps();
+    }
 }

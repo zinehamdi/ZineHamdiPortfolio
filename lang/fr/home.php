@@ -2,17 +2,17 @@
 
 return [
     'hero' => [
-        'title' => "Une équipe complète, dans une seule personne — lancez votre présence digitale à moindre coût",
-        'subtitle' => "Gestion de sites, dev Laravel, outils IA, contenus sociaux — en trois langues.",
+        'greeting' => 'ZINDEV',
+        'name' => 'Studio de Développement Web Full Stack & Assisté par IA',
+        'title' => 'Développeur PHP Full Stack | Constructeur IA | Scrum Master | Designer Branding',
+        'subtitle' => 'Laravel, Vue, Angular, Tailwind — Solutions multilingues en arabe, anglais et français.',
+        'description' => 'Je suis une équipe full-stack solo basée en Tunisie, aidant les entreprises à se développer en ligne. De la stratégie au code, je construis des solutions Laravel + Vue modernes, j\'intègre des outils IA et gère les projets de bout en bout. Spécialisé dans le branding d\'huile d\'olive pour les marchés du Golfe.',
+        'cta' => 'DÉCOUVRIR MES SERVICES',
         'cta_label' => 'Demander un devis',
-        'cta' => [
-            'contact' => 'Contact',
-            'about' => 'À propos',
-        ],
     ],
     'meta' => [
-        'title' => "Une équipe complète en solo — Laravel, IA et contenu en trois langues",
-        'description' => "Lancez vite avec un setup léger et multilingue : Laravel propre, Tailwind v4, workflows IA et contenus efficaces.",
+        'title' => 'ZINDEV — Développeur Full Stack Tunisie | Laravel, IA & Expert Branding',
+        'description' => 'Développeur PHP Full Stack à Kairouan, Tunisie. Laravel, Vue, Angular, Tailwind CSS, Vite. Développement assisté par IA, branding huile d\'olive pour marchés Saoudiens/Golfe, gestion de projet Scrum. Fondateur de ZINDEV.',
         'og_image' => '/images/og/home.jpg',
     ],
     'values' => [

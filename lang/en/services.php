@@ -1,35 +1,33 @@
 <?php
 
 return [
-    'title' => 'Services',
-    'intro' => 'From website management to custom Laravel builds and AI-powered workflows — shipped quickly and maintained cleanly.',
-    'sections' => [
-        'management' => [
-            'title' => 'Website Management',
-            'items' => [
-                'Uptime & performance monitoring',
-                'Security updates and backups',
-                'Content updates and publishing',
-                'Analytics and reporting',
-            ],
+    'section_label' => 'What I Deliver',
+    'title' => 'Premium Development Services',
+    'intro' => 'From enterprise web platforms to AI automation, I deliver complete solutions that drive real business results. Each service combines technical excellence with strategic thinking.',
+    'services' => [
+        [
+            'title' => 'Laravel Full-Stack Development',
+            'desc' => 'Enterprise-grade web applications with robust backends, intuitive frontends, and scalable architecture. Complete project delivery from database design to deployment.',
         ],
-        'laravel' => [
-            'title' => 'Laravel Development',
-            'items' => [
-                'New apps and feature development',
-                'APIs and integrations',
-                'Payment and subscriptions',
-                'Testing and CI/CD setup',
-            ],
+        [
+            'title' => 'E-commerce & Multi-vendor Platforms',
+            'desc' => 'Custom online stores and marketplace solutions with payment integration, inventory management, and vendor dashboards. Specialized in Gulf market compliance.',
         ],
-        'ai' => [
-            'title' => 'AI & Content Workflows',
-            'items' => [
-                'Prompt engineering and tooling',
-                'Content pipelines for social and blog',
-                'Automation and assistants',
-                'Multilingual content production',
-            ],
+        [
+            'title' => 'AI-Powered Business Automation',
+            'desc' => 'Intelligent workflow automation, chatbots, and AI-assisted tools to streamline operations. Reduce manual work and scale your business efficiently.',
+        ],
+        [
+            'title' => 'API Development & Integration',
+            'desc' => 'RESTful APIs, third-party integrations, and microservices architecture. Connect your systems seamlessly with secure, documented endpoints.',
+        ],
+        [
+            'title' => 'Premium Branding & Label Design',
+            'desc' => 'Olive oil export packaging, product labels, and brand identity for Gulf markets. Specialized in luxury positioning and Arabic typography.',
+        ],
+        [
+            'title' => 'Booking & Reservation Systems',
+            'desc' => 'Service marketplace platforms with appointment scheduling, provider management, and automated notifications. Perfect for multi-vendor service businesses.',
         ],
     ],
     'pricing' => [

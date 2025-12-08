@@ -12,19 +12,22 @@ return [
     'tiers' => [
         [
             'name' => 'Starter',
-            'price' => '999',
+            'price' => '699 TND',
+            'original_price' => '999 TND',
             'features' => ['1‑3 صفحات','تصميم متجاوب','تحسين أساسي لمحركات البحث','نموذج اتصال'],
             'slug' => 'starter',
         ],
         [
             'name' => 'Smart',
-            'price' => '1,999',
+            'price' => '1,399 TND',
+            'original_price' => '1,999 TND',
             'features' => ['حتى 8 صفحات','مدونة/معرض الأعمال','تحسين SEO مُعزّز','تحليلات'],
             'slug' => 'smart',
         ],
         [
             'name' => 'Pro',
-            'price' => '3,499',
+            'price' => '2,449 TND',
+            'original_price' => '3,499 TND',
             'features' => ['صفحات غير محدودة','تجارة إلكترونية/مدفوعات','SEO متقدم','تكاملات'],
             'slug' => 'pro',
             'featured' => true,

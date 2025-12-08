@@ -2,17 +2,17 @@
 
 return [
     'hero' => [
-        'title' => 'A full team in one person — launch your digital presence for less',
-        'subtitle' => 'Site management, Laravel dev, AI tooling, social content — in three languages.',
+        'greeting' => 'ZINDEV',
+        'name' => 'Full Stack Developer & AI-Assisted Web Creation Studio',
+        'title' => 'Full Stack PHP Developer | AI-Assisted Builder | Scrum Master | Branding Designer',
+        'subtitle' => 'Laravel, Vue, Angular, Tailwind — Multilingual solutions in Arabic, English, and French.',
+        'description' => 'I\'m a one-man full-stack team based in Tunisia helping businesses grow online. From strategy to code, I build clean, modern Laravel + Vue solutions, integrate AI tools, and manage projects end-to-end. Specializing in olive oil branding for Gulf markets, premium label design, and agile project delivery.',
+        'cta' => 'DISCOVER MY SERVICES',
         'cta_label' => 'Get a quick quote',
-        'cta' => [
-            'contact' => 'Contact',
-            'about' => 'About Me',
-        ],
     ],
     'meta' => [
-        'title' => 'One-man full team for SMBs — Laravel, AI, and content in three languages',
-        'description' => 'Launch fast with a lean, multilingual setup: clean Laravel, Tailwind v4, AI workflows, and content that moves the needle.',
+        'title' => 'ZINDEV — Full Stack Developer Tunisia | Laravel, AI & Branding Expert',
+        'description' => 'Full Stack PHP Developer in Kairouan, Tunisia. Laravel, Vue, Angular, Tailwind CSS, Vite. AI-assisted development, olive oil branding for Saudi/Gulf markets, Scrum-certified project management. Founder of ZINDEV.',
         'og_image' => '/images/og/home.jpg',
     ],
     'values' => [
@@ -30,7 +30,7 @@ return [
         'subtitle' => 'Get a quick quote or chat on WhatsApp.',
         'whatsapp' => 'Chat on WhatsApp',
         'email' => 'Email me',
-        'prefill' => 'Hi Zine, I’d like a quick quote for my website.',
+        'prefill' => 'Hi Zine, I\'d like a quick quote for my website.',
     ],
     'testimonials' => [
         'title' => 'Testimonials',

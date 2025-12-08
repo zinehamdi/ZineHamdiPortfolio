@@ -13,7 +13,7 @@
   <a href="{{ url('/'.$loc) }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('common.nav.home') }}</a>
   <a href="{{ url('/'.$loc).'#about' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('common.nav.about') }}</a>
   <a href="{{ url('/'.$loc).'#resume' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('resume.title') }}</a>
-  <a href="{{ url('/'.$loc).'#portfolio' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('common.nav.portfolio') }}</a>
+  <a href="{{ url('/'.$loc).'#projects' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('common.nav.portfolio') }}</a>
   <a href="{{ url('/'.$loc).'#testimonials' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('testimonials.title') }}</a>
   <a href="{{ url('/'.$loc).'#contact' }}" class="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70">{{ __('common.nav.contact') }}</a>
     </nav>

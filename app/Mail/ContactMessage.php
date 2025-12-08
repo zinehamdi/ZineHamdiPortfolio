@@ -4,9 +4,10 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMessage extends Mailable
+class ContactMessage extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

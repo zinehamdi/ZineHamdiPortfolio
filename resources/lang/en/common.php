@@ -8,6 +8,8 @@ return [
         'packages' => 'Packages',
         'portfolio' => 'Portfolio',
         'about' => 'About',
+        'pricing' => 'Pricing',
+        'quote' => 'Get Quote',
         'blog' => 'Blog',
         'contact' => 'Contact',
     ],

@@ -16,20 +16,20 @@ class SecurityHeaders
 
     // In local, allow generic http/ws schemes to support Vite dev server on any host/port (e.g., 127.0.0.1:5173 or random ports)
     if ($isLocal) {
-            $scriptSrc = "'self' 'unsafe-inline' http: https:";
+            $scriptSrc = "'self' 'unsafe-inline' 'unsafe-eval' http: https:";
             $styleSrc  = "'self' 'unsafe-inline' http: https:";
             $imgSrc    = "'self' data: blob: http: https:";
             $connectSrc= "'self' http: https: ws: wss:";
             $fontSrc   = "'self' http: https: data:";
         } else {
-            $scriptSrc = "'self' 'unsafe-inline' https:";
+            $scriptSrc = "'self' 'unsafe-inline' 'unsafe-eval' https:";
             $styleSrc  = "'self' 'unsafe-inline' https:";
             $imgSrc    = "'self' data: blob: https:";
             $connectSrc= "'self' https: wss:";
             $fontSrc   = "'self' https: data:";
         }
 
-        $csp = "default-src 'self' https: data: blob:; script-src {$scriptSrc}; style-src {$styleSrc}; img-src {$imgSrc}; connect-src {$connectSrc}; font-src {$fontSrc}; frame-ancestors 'self';";
+        $csp = "default-src 'self' https: data: blob:; script-src {$scriptSrc}; style-src {$styleSrc}; img-src {$imgSrc}; media-src 'self' https: data: blob:; connect-src {$connectSrc}; font-src {$fontSrc}; frame-ancestors 'self';";
         $response->headers->set('X-Frame-Options', 'SAMEORIGIN');
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');

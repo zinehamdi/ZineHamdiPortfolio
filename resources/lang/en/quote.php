@@ -3,6 +3,7 @@
 return [
     'rate_limit' => 'Too many attempts. Please try again later.',
     'agree_required' => 'You must accept the terms.',
+    'needs_required' => 'Please select at least one service.',
     'business' => [
         'title' => 'Business',
         'fields' => [
@@ -39,6 +40,10 @@ return [
         'next' => 'Next',
         'submit' => 'Submit',
         'download_pdf' => 'Download PDF',
+    ],
+    'cta' => [
+        'start' => 'Select',
+        'discount' => '30% reduced prices',
     ],
     'result' => [
         'title' => 'Estimated budget',

@@ -16,10 +16,8 @@ return new class extends Migration {
             $table->text('message');
             $table->string('locale')->nullable();
             $table->string('source')->nullable();
-            $table->string('ip')->nullable();
-            $table->string('user_agent', 500)->nullable();
-            $table->string('path')->nullable();
-            $table->string('referrer')->nullable();
+            $table->string('status', 32)->default('new');
+            $table->json('metadata')->nullable();
             $table->timestamps();
         });
     }

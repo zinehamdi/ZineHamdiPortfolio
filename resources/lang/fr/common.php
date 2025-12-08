@@ -5,9 +5,11 @@ return [
     'nav' => [
         'home' => 'Accueil',
         'services' => 'Services',
-        'packages' => 'Offres',
+        'packages' => 'Forfaits',
         'portfolio' => 'Portfolio',
         'about' => 'À propos',
+        'pricing' => 'Tarifs',
+        'quote' => 'Demander un Devis',
         'blog' => 'Blog',
         'contact' => 'Contact',
     ],

@@ -123,6 +123,6 @@
     </footer>
 
     <!-- Chat widget removed -->
-    {{-- Livewire scripts are loaded via ESM in resources/js/app.js --}}
+    @livewireScripts
 </body>
 </html>

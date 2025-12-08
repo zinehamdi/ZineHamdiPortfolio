@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.portfolio')
 
 @section('title', __('contact.meta.title'))
 @section('meta_description', __('contact.meta.description'))

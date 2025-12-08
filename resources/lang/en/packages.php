@@ -12,19 +12,22 @@ return [
     'tiers' => [
         [
             'name' => 'Starter',
-            'price' => '999',
+            'price' => '699 TND',
+            'original_price' => '999 TND',
             'features' => ['1‑3 pages','Responsive design','Basic SEO','Contact form'],
             'slug' => 'starter',
         ],
         [
             'name' => 'Smart',
-            'price' => '1,999',
+            'price' => '1,399 TND',
+            'original_price' => '1,999 TND',
             'features' => ['Up to 8 pages','Blog/Portfolio','Enhanced SEO','Analytics'],
             'slug' => 'smart',
         ],
         [
             'name' => 'Pro',
-            'price' => '3,499',
+            'price' => '2,449 TND',
+            'original_price' => '3,499 TND',
             'features' => ['Unlimited pages','E‑commerce/Payments','Advanced SEO','Integrations'],
             'slug' => 'pro',
             'featured' => true,

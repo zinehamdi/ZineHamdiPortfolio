@@ -112,3 +112,12 @@ it('rate limiter blocks excessive submissions', function () {
     // Component should have an error for rate limit (Livewire error bag)
     $comp->assertHasErrors(['rate']);
 });
+
+it('supports stepping backward with the back button', function () {
+    Livewire::test(QuoteWizard::class)
+        ->set('step', 3)
+        ->call('prevStep')
+        ->assertSet('step', 2)
+        ->call('prevStep')
+        ->assertSet('step', 1);
+});

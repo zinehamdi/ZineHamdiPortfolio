@@ -1,7 +1,28 @@
 <?php
 
 return [
-    'title' => 'À propos',
+    'badge' => 'QUI JE SUIS',
+    'title' => 'Développeur Laravel &',
+    'title_gradient' => 'Architecte de Solutions Digitales',
+    'badge_status' => 'Ouvert aux Projets',
+    'description' => 'Je suis Hamdi Zine, développeur full-stack Laravel spécialisé dans l\'automatisation business alimentée par IA et les expériences digitales premium. Basé à Kairouan, Tunisie, je livre des plateformes web de niveau entreprise, des solutions e-commerce et du branding pour l\'export d\'huile d\'olive pour des clients dans la région du Golfe. Avec une expertise éprouvée dans les marketplaces multi-vendeurs, les systèmes de réservation et les workflows automatisés, j\'apporte l\'expérience d\'une équipe de développement complète en tant que professionnel dédié.',
+    'skills_title' => 'Compétences Principales',
+    'skills' => [
+        'Expert Laravel',
+        'Vue.js & Tailwind',
+        'Automatisation IA',
+        'Plateformes E-commerce',
+        'Systèmes Multi-vendeurs',
+        'Développement API',
+    ],
+    'process_title' => 'Comment Je Travaille',
+    'process' => [
+        ['number' => '01', 'title' => 'Découvrir', 'desc' => 'Comprendre vos objectifs business et exigences techniques.'],
+        ['number' => '02', 'title' => 'Construire', 'desc' => 'Développer des solutions évolutives avec du code propre et les meilleures pratiques.'],
+        ['number' => '03', 'title' => 'Lancer', 'desc' => 'Déployer avec documentation complète, formation et support continu.'],
+    ],
+    'cta_cv' => 'Télécharger Mon CV',
+    'title_old' => 'À propos',
     'intro' => "Je suis Zine — une équipe complète à moi seul, j'aide les petites entreprises à lancer et grandir rapidement et clairement.",
     'sections' => [
         'mission' => [

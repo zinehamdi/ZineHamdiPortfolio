@@ -10,6 +10,18 @@ class ContactMessage extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'email', 'phone', 'budget', 'message', 'locale', 'source', 'ip', 'user_agent', 'path', 'referrer'
+        'name',
+        'email',
+        'phone',
+        'budget',
+        'message',
+        'locale',
+        'source',
+        'status',
+        'metadata',
+    ];
+
+    protected $casts = [
+        'metadata' => 'array',
     ];
 }

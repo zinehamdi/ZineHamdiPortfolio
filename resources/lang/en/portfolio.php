@@ -1,24 +1,76 @@
 <?php
 
 return [
-    'meta' => [
-        'title' => 'Portfolio – Laravel, AI & Project Delivery',
-        'description' => 'Selected projects across web development, project management, and AI automation showcasing clean architecture, performance and business impact.',
+    'section_label' => 'Recent Work',
+    'title' => 'Featured Projects',
+    'badge' => 'Real client work',
+    'images_count' => ':count images',
+    'categories' => [
+        'web' => 'WEB DEVELOPMENT',
+        'design' => 'BRAND DESIGN',
+        'pm' => 'PROJECT MANAGEMENT',
+        'ai' => 'AI & AUTOMATION',
     ],
-    'title' => 'Portfolio',
+    'title_old' => 'Portfolio',
     'tabs' => [
-        // Updated categories
-        'all' => 'All',
-        'web' => 'Web Development',
-        'pm' => 'Project Management',
-        'ai' => 'AI & Automation',
+        'all' => 'ALL',
+        'webdev' => 'WEB DEVELOPMENT',
+        'pm' => 'PROJECT MANAGEMENT',
+        'ai' => 'AI & AUTOMATION',
+        'branding' => 'BRANDING & DESIGN',
     ],
-    'images' => [
-        'graphic1_alt' => 'Poster design mockups in a grid',
-        'graphic2_alt' => 'Logo lockups on stationery',
-        'web1_alt' => 'SaaS landing page with charts',
-        'web2_alt' => 'E‑commerce product grid UI',
-        'photo1_alt' => 'Portrait photo in studio lighting',
-        'photo2_alt' => 'Lifestyle photography outdoors',
+    'cases' => [
+        'title' => 'Featured Case Studies',
+        'subtitle' => 'Real-world projects delivered for clients in Tunisia, Saudi Arabia, and the Gulf region',
+        'cta' => 'Discuss Your Project',
+        'kairouanhub' => [
+            'title' => 'KairouanHub',
+            'subtitle' => 'Multi-vendor Service Platform',
+            'desc' => 'A comprehensive local services marketplace built with Laravel + Flutter. Features multi-vendor management, booking system, and provider profiles for Kairouan businesses.',
+        ],
+        'abiooc' => [
+            'title' => 'ABIOOC Olive Oil',
+            'subtitle' => 'Premium E-commerce Platform',
+            'desc' => 'E-commerce solution for premium Tunisian olive oil exports. Bilingual Arabic/English store with wholesale/retail pricing, designed for Gulf market buyers.',
+        ],
+        'samouha' => [
+            'title' => 'Samouha Couture',
+            'subtitle' => 'Fashion Brand Website',
+            'desc' => 'Elegant showcase website for a local Tunisian fashion brand. Features portfolio gallery, appointment booking, and social media integration.',
+        ],
+        'olive' => [
+            'title' => 'Olive Oil Export Projects',
+            'subtitle' => 'Al-Mishkat, Azayateen, TOOP',
+            'desc' => 'Premium label design and branding for olive oil producers targeting Saudi Arabia and Gulf markets. Includes packaging compliance, Arabic typography, and luxury positioning.',
+        ],
+    ],
+    'gallery' => [
+        'title' => 'Work Gallery',
+        'subtitle' => 'Screenshots, designs, and project highlights from my portfolio',
+        'alt_suffix' => 'Portfolio work by ZINDEV',
+        'empty' => 'Gallery images coming soon...',
+    ],
+    'albums' => [
+        'all' => 'All Work',
+        'webdev' => [
+            'title' => 'Web Development',
+            'desc' => 'Laravel, Vue & Full-Stack Projects',
+        ],
+        'olive' => [
+            'title' => 'Olive Oil Branding',
+            'desc' => 'Premium Labels & Packaging for Gulf Markets',
+        ],
+        'design' => [
+            'title' => 'Design Work',
+            'desc' => 'Logos, Graphics & Visual Identity',
+        ],
+        'work' => [
+            'title' => 'Work & Projects',
+            'subtitle' => 'Screenshots, Designs & Maquettes',
+        ],
+        'personal' => [
+            'title' => 'About Me',
+            'subtitle' => 'Personal Photos',
+        ],
     ],
 ];

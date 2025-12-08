@@ -8,6 +8,8 @@ return [
         'packages' => 'الباقات',
         'portfolio' => 'الأعمال',
         'about' => 'من أنا',
+        'pricing' => 'الأسعار',
+        'quote' => 'طلب عرض',
         'blog' => 'المدونة',
         'contact' => 'اتصل',
     ],

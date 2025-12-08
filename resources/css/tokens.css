@@ -1,0 +1,77 @@
+/* Design tokens for Metallic Laser Portfolio + legacy palette */
+
+:root {
+    /* Typography */
+    --font-sans: 'Inter', 'Manrope', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+    /* Legacy Brand Palette (still used in existing views) */
+    --color-bg-primary: #050505;
+    --color-bg-secondary: #0A0F0D;
+
+    /* Accents */
+    --color-accent: #A3B18A; /* Sage */
+    --color-accent-alt: #D4A373; /* Gold */
+
+    /* Text */
+    --color-text-primary: #E8E8E8;
+    --color-text-secondary: #A0A0A0;
+
+    /* 3D & Glass (legacy) */
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(10, 15, 13, 0.6);
+
+    /* Gradients (legacy) */
+    --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-accent-alt));
+
+    /* Metallic Laser Portfolio: base surfaces */
+    --mlp-bg-base: #05060a;
+    --mlp-bg-elevated: #0b0e16;
+    --mlp-bg-elevated-soft: #111521;
+    --mlp-bg-glass: rgba(10, 14, 25, 0.72);
+
+    --mlp-metal-dark: #10131c;
+    --mlp-metal-mid: #1a1f2b;
+    --mlp-metal-light: #2b3245;
+
+    /* Gold + laser accents */
+    --mlp-gold-soft: #c7a86d;
+    --mlp-gold: #f9d98f;
+    --mlp-gold-strong: #ffea9f;
+
+    --mlp-laser-green: #2bf79f;
+    --mlp-laser-blue: #3fd2ff;
+    --mlp-laser-purple: #b15cff;
+    --mlp-laser-pink: #ff5ccf;
+
+    /* Text + borders */
+    --mlp-text-main: #f8fafc;
+    --mlp-text-muted: #9ca3af;
+    --mlp-border-subtle: rgba(148, 163, 184, 0.18);
+
+    /* Radii */
+    --mlp-radius-xs: 0.35rem;
+    --mlp-radius-sm: 0.55rem;
+    --mlp-radius-md: 0.9rem;
+    --mlp-radius-lg: 1.25rem;
+    --mlp-radius-xl: 1.75rem;
+    --mlp-radius-2xl: 2.25rem;
+    --mlp-radius-pill: 999px;
+
+    /* Shadows */
+    --mlp-shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
+    --mlp-shadow-strong: 0 24px 70px rgba(0, 0, 0, 0.75);
+    --mlp-shadow-gold: 0 0 38px rgba(249, 217, 143, 0.35);
+    --mlp-shadow-laser-green: 0 0 38px rgba(43, 247, 159, 0.6);
+    --mlp-shadow-laser-blue: 0 0 40px rgba(63, 210, 255, 0.7);
+    --mlp-shadow-laser-purple: 0 0 40px rgba(177, 92, 255, 0.7);
+
+    /* Metallic borders */
+    --mlp-border-metal: 1px solid rgba(148, 163, 184, 0.4);
+    --mlp-border-metal-strong: 1px solid rgba(209, 213, 219, 0.5);
+    --mlp-border-gold: 1px solid rgba(249, 217, 143, 0.75);
+
+    /* Glass system */
+    --mlp-glass-backdrop-blur: 18px;
+    --mlp-glass-border: 1px solid rgba(148, 163, 184, 0.35);
+}

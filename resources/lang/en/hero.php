@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'badge' => 'AVAILABLE FOR WORK',
+    'brand' => 'ZINDEV',
+    'tagline' => 'Full Team In One Man',
+    'typing_texts' => [
+        'Laravel Full-Stack Developer',
+        'Business Automation Expert',
+        'AI-Powered Solutions Architect',
+    ],
+    'description' => 'Building scalable web platforms with :laravel expertise, :ai automation, and premium :business for ambitious founders.',
+    'description_laravel' => 'Laravel',
+    'description_ai' => 'AI-powered',
+    'description_business' => 'business solutions',
+    'cta_work' => 'VIEW MY WORK',
+    'cta_contact' => 'Contact Me',
+    'stats' => [
+        'years' => '5+',
+        'years_label' => 'Years',
+        'stack' => 'Laravel',
+        'stack_label' => 'Full Stack',
+        'specialty' => 'AI',
+        'specialty_label' => 'Application',
+        'projects' => '30+',
+        'projects_label' => 'Projects',
+        'clients' => '20+',
+        'clients_label' => 'Clients',
+    ],
+];

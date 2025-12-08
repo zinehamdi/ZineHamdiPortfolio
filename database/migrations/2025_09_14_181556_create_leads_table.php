@@ -17,22 +17,24 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone')->nullable();
             $table->string('company')->nullable();
-            $table->string('locale')->default('ar');
+            $table->string('locale', 10)->nullable();
             $table->string('business_type')->nullable();
-            $table->boolean('need_website');
-            $table->boolean('need_content');
-            $table->boolean('need_ai');
-            $table->boolean('need_seo');
+            $table->json('needs')->nullable();
             $table->string('budget_range')->nullable();
             $table->text('notes')->nullable();
             $table->foreignId('package_id')->nullable()->constrained('packages')->nullOnDelete();
             $table->integer('price_estimate_min')->nullable();
             $table->integer('price_estimate_max')->nullable();
-            $table->string('currency')->default('TND');
-            $table->string('stage')->default('new');
+            $table->string('currency', 3)->default('TND');
+            $table->foreignId('lead_stage_id')->nullable()->constrained('lead_stages')->nullOnDelete();
             $table->string('source')->nullable();
+            $table->json('metadata')->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            $table->index('email');
+            $table->index('lead_stage_id');
+            $table->index('package_id');
         });
     }
 

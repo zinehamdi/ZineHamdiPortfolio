@@ -1,73 +1,123 @@
 @php
   $rtl = app()->getLocale() === 'ar';
-  $tr = function(string $key, string $def) {
+  $tr = function (string $key, string $def) {
     $v = __($key);
     return $v === $key ? $def : $v;
   };
 @endphp
 
-<section id="about" class="py-12 lg:py-20" @if($rtl) dir="rtl" @endif aria-labelledby="about-heading">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-  <div class="bg-[#dbdbd7] p-5 sm:p-8 lg:p-12 rounded-2xl section-shadow transition-all duration-300">
-          <header class="mb-6 lg:mb-8">
-            <h2 id="about-heading" class="text-[#1b1b18] uppercase font-black text-2xl sm:text-3xl lg:text-4xl mb-3">{{ $tr('about.title','About Me') }}</h2>
-            <p class="text-[#1b1b18]/80 text-lg sm:text-xl">{{ $tr('about.subtitle','I’m Hamdi Zine — a full-stack developer, project manager, and digital builder') }}</p>
-          </header>
+<section id="about" class="py-10 lg:py-14 relative overflow-hidden mlp-bg-root border-t border-mlp-border-subtle/50" @if($rtl) dir="rtl" @endif
+  aria-labelledby="about-heading">
 
-          <p class="text-[#1b1b18]/80 text-base sm:text-lg leading-relaxed mb-6 lg:mb-8">
-            {{ $tr('about.bio','Based in Tunisia, I bring 5+ years of experience in web development, business management, and agile project delivery. I specialize in building multilingual Laravel websites, integrating AI-powered features, and leading small projects with a professional touch. My mission is to give entrepreneurs affordable, complete solutions without the overhead of a big team.') }}
+  <!-- Background Elements -->
+  <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-accent/5 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-brand-primary/10 blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+
+    <!-- Header with integrated image - Horizontal Layout -->
+    <div class="mlp-glass-subtle rounded-mlp-md border border-mlp-border-subtle/60 overflow-hidden mb-8" data-animate="about-header">
+      <div class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-8">
+        <!-- Profile Image -->
+        <div class="relative group/img flex-shrink-0">
+          <div class="w-[280px] h-[360px] overflow-hidden rounded-xl border border-mlp-border-subtle/60 shadow-mlp-laser-green">
+            <div class="absolute inset-0 mlp-laser-orbit group-hover/img:opacity-80 transition-opacity duration-500 z-10"></div>
+            <img src="{{ asset('images/portfoliopicture/mecoding.jpg') }}" alt="Hamdi Zine" class="w-full h-full object-cover object-center transform group-hover/img:scale-110 transition-transform duration-700">
+          </div>
+          <!-- Status badge -->
+          <div class="absolute -bottom-2 -right-2 z-20 mlp-glass-subtle border border-mlp-border-subtle/60 px-2 py-1 rounded-lg shadow-mlp-laser-green text-xs">
+            <span class="text-brand-accent font-bold">{{ $tr('about.badge_status','Open for Projects') }}</span>
+          </div>
+        </div>
+        
+        <!-- Text content -->
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/20 bg-brand-accent/5 backdrop-blur-sm mb-3">
+            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            <span class="text-brand-accent text-xs font-mono tracking-wider">{{ $tr('about.badge','WHO I AM') }}</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">
+            {{ $tr('about.title','Laravel Developer &') }} <br>
+            <span class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00FF88] to-[#FFD700]" style="background: linear-gradient(to right, #00FF88, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{{ $tr('about.title_gradient','Digital Solutions Architect') }}</span>
+          </h2>
+          <p class="text-white/80 text-sm md:text-base leading-relaxed mb-4">
+            {{ $tr('about.description','I\'m Hamdi Zine, a Laravel full-stack developer specializing in AI-powered business automation and premium digital experiences. Based in Kairouan, Tunisia, I deliver enterprise-grade web platforms, e-commerce solutions, and olive oil export branding for clients across the Gulf region. With proven expertise in multi-vendor marketplaces, booking systems, and automated workflows, I bring the complete development team experience as one dedicated professional.') }}
           </p>
+          
+          <!-- CV Download Button -->
+          <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent text-brand-primary font-bold rounded-xl hover:bg-brand-accent/90 transition-all shadow-[0_0_20px_rgba(0,255,136,0.3)]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            {{ $tr('about.cta_cv','Download My CV') }}
+          </a>
+        </div>
+      </div>
+    </div>
 
-          <!-- Metrics Grid -->
-          <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-5 lg:mb-8">
-            @php $metrics = [
-              ['value' => '5+', 'label' => $tr('about.metrics.years','YEARS IN WEB DEV')],
-              ['value' => '20+', 'label' => $tr('about.metrics.projects','PROJECTS DELIVERED')],
-              ['value' => '10+', 'label' => $tr('about.metrics.partners','HAPPY BUSINESS PARTNERS')],
-              ['value' => '3', 'label' => $tr('about.metrics.certs','CERTIFICATIONS (Full-Stack, PMO, Scrum)')],
-            ]; @endphp
-            @foreach($metrics as $m)
-              <div class="bg-white rounded-xl p-4 sm:p-6 text-center section-shadow transition-all duration-300">
-                <div class="text-2xl sm:text-3xl font-black text-[#1b1b18] mb-2">{{ $m['value'] }}</div>
-                <div class="text-xs sm:text-sm uppercase font-bold text-[#1b1b18]/70">{{ $m['label'] }}</div>
-              </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Content Column -->
+      <div class="space-y-6">
+
+        <!-- Skills Grid -->
+        <div class="mlp-card mlp-metal-sheen border border-mlp-border-subtle/70 p-6" data-animate="about-skills">
+          <h3 class="text-white font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            {{ $tr('about.skills_title','Core Superpowers') }}
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            @php
+              $skills = __('about.skills');
+              if (!is_array($skills) || $skills === 'about.skills') {
+                $skills = ['Laravel Expert', 'Vue.js & Tailwind', 'AI Automation', 'E-commerce Platforms', 'Multi-vendor Systems', 'API Development'];
+              }
+            @endphp
+            @foreach($skills as $skill)
+              <span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm hover:border-brand-accent/50 hover:text-brand-accent transition-colors cursor-default">
+                {{ $skill }}
+              </span>
             @endforeach
           </div>
+        </div>
+      </div>
 
-          <!-- What I Do Section -->
-          <div class="bg-white rounded-xl p-5 sm:p-6 section-shadow transition-all duration-300">
-            <h3 class="text-lg uppercase font-black text-[#1b1b18] mb-6">{{ $tr('about.what_i_do','What I Do?') }}</h3>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-[#FFA400] rounded-full flex items-center justify-center">
-                  <svg class="w-8 h-8 text-[#1b1b18]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L22 9L12 3M4 10.91L12 15.5L20 10.91V17L12 21.5L4 17V10.91Z"/></svg>
-                </div>
-                <h4 class="font-bold text-[#1b1b18] mb-2">{{ $tr('about.do.webdev','WEB DEVELOPMENT') }}</h4>
-                <p class="text-sm text-[#1b1b18]/70">{{ $tr('about.do.webdev_desc','Laravel, Vue, Angular, and full-stack PHP solutions designed for speed and security.') }}</p>
-              </div>
-              <div class="text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-[#FFA400] rounded-full flex items-center justify-center">
-                  <svg class="w-8 h-8 text-[#1b1b18]" fill="currentColor" viewBox="0 0 24 24"><path d="M9 2V4H4V6H9V8L12 5L9 2M15 8V6H20V4H15V2L12 5L15 8M4 18V20H9V22L12 19L9 16V18H4M15 16L12 19L15 22V20H20V18H15V16Z"/></svg>
-                </div>
-                <h4 class="font-bold text-[#1b1b18] mb-2">{{ $tr('about.do.pm','PROJECT MANAGEMENT') }}</h4>
-                <p class="text-sm text-[#1b1b18]/70">{{ $tr('about.do.pm_desc','Certified Scrum & PMO, I organize projects with clear backlogs, sprints, and results.') }}</p>
-              </div>
-              <div class="text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-[#FFA400] rounded-full flex items-center justify-center">
-                  <svg class="w-8 h-8 text-[#1b1b18]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12C2 16.4 4.8 20.1 8.7 21.5L9.3 19.7C6.1 18.6 4 15.6 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 15.6 17.9 18.6 14.7 19.7L15.3 21.5C19.2 20.1 22 16.4 22 12C22 6.5 17.5 2 12 2M11 6V13L16.2 16.1L17 14.8L12.5 12.2V6H11Z"/></svg>
-                </div>
-                <h4 class="font-bold text-[#1b1b18] mb-2">{{ $tr('about.do.ai','AI INTEGRATION') }}</h4>
-                <p class="text-sm text-[#1b1b18]/70">{{ $tr('about.do.ai_desc','Custom chatbots, automation, and AI-assisted tools to make your business smarter.') }}</p>
-              </div>
-              <div class="text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-[#FFA400] rounded-full flex items-center justify-center">
-                  <svg class="w-8 h-8 text-[#1b1b18]" fill="currentColor" viewBox="0 0 24 24"><path d="M3 13H11V3H3V13M3 21H11V15H3V21M13 21H21V11H13V21M13 3V9H21V3H13Z"/></svg>
-                </div>
-                <h4 class="font-bold text-[#1b1b18] mb-2">{{ $tr('about.do.strategy','BUSINESS STRATEGY') }}</h4>
-                <p class="text-sm text-[#1b1b18]/70">{{ $tr('about.do.strategy_desc','Helping entrepreneurs shape ideas into actionable plans, from concept to launch.') }}</p>
-              </div>
+      <!-- Second Column -->
+      <div class="space-y-6">
+
+        <!-- How I Work -->
+        <div class="mlp-card-strong mlp-metal-sheen rounded-2xl p-6 border border-mlp-border-subtle/70" data-animate="about-process">
+          <h3 class="text-white font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+            {{ $tr('about.process_title','How I Work') }}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            @php
+              $process = __('about.process');
+              if (!is_array($process) || $process === 'about.process') {
+                $process = [
+                  ['number' => '01.', 'title' => 'Discover', 'desc' => 'Understand your business goals and technical requirements.'],
+                  ['number' => '02.', 'title' => 'Build', 'desc' => 'Develop scalable solutions with clean code and best practices.'],
+                  ['number' => '03.', 'title' => 'Launch', 'desc' => 'Deploy with full documentation, training, and ongoing support.']
+                ];
+              }
+            @endphp
+            @foreach($process as $step)
+            <div class="space-y-2">
+              <span class="text-brand-accent font-black text-xl">{{ $step['number'] }}</span>
+              <h4 class="text-white font-bold text-sm">{{ $step['title'] }}</h4>
+              <p class="text-white/60 text-xs">{{ $step['desc'] }}</p>
             </div>
+            @endforeach
           </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>

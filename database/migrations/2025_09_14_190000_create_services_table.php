@@ -11,12 +11,16 @@ return new class extends Migration {
             $table->id();
             $table->string('slug')->unique();
             $table->json('title');
-            $table->json('summary');
-            $table->json('body');
+            $table->json('description');
+            $table->json('summary')->nullable();
+            $table->json('body')->nullable();
             $table->string('icon')->nullable();
+            $table->foreignId('parent_id')->nullable()->constrained('services')->nullOnDelete();
+            $table->unsignedSmallInteger('display_order')->default(0);
             $table->boolean('is_active')->default(true)->index();
             $table->timestamps();
             $table->index('slug');
+            $table->index('parent_id');
         });
     }
 

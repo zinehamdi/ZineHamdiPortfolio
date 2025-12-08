@@ -16,9 +16,16 @@ class ServiceFactory extends Factory
     {
         $slug = fake()->unique()->slug();
         $title = ['ar' => ucfirst($slug), 'en' => ucfirst($slug), 'fr' => ucfirst($slug)];
+        $description = [
+            'ar' => 'وصف ' . $slug,
+            'en' => 'Description ' . $slug,
+            'fr' => 'Description ' . $slug,
+        ];
+
         return [
             'slug' => $slug,
             'title' => $title,
+            'description' => $description,
             'summary' => [
                 'ar' => 'ملخص ' . $slug,
                 'en' => 'Summary ' . $slug,
