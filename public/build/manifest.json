@@ -1,0 +1,38 @@
+{
+  "_index-DKtf60Sy.js": {
+    "file": "assets/index-DKtf60Sy.js",
+    "name": "index"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DGeJbrKH.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-ELhc5Ui9.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/metallic-hero.js": {
+    "file": "assets/metallic-hero-DvEzemAd.js",
+    "name": "metallic-hero",
+    "src": "resources/js/metallic-hero.js",
+    "isEntry": true,
+    "imports": [
+      "_index-DKtf60Sy.js"
+    ]
+  },
+  "resources/js/metallic-sections.js": {
+    "file": "assets/metallic-sections-Bhcas5SS.js",
+    "name": "metallic-sections",
+    "src": "resources/js/metallic-sections.js",
+    "isEntry": true,
+    "imports": [
+      "_index-DKtf60Sy.js"
+    ]
+  }
+}
