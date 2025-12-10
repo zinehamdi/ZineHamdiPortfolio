@@ -21,7 +21,7 @@ return [
             'name' => 'Smart',
             'price' => '1 399 TND',
             'original_price' => '1 999 TND',
-            'features' => ['Jusqu'à 8 pages','Blog/Portfolio','SEO amélioré','Analytics'],
+            'features' => ['Jusqu\'à 8 pages', 'Blog/Portfolio', 'SEO amélioré', 'Analytics'],
             'slug' => 'smart',
         ],
         [
