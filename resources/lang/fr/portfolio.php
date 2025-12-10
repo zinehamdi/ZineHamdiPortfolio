@@ -12,6 +12,38 @@ return [
         'ai' => 'IA & AUTOMATISATION',
     ],
     'title_old' => 'Portfolio',
+    'projects' => [
+        'zindev' => [
+            'name' => 'ZINDEV Portfolio',
+            'description' => 'Site portfolio moderne présentant des capacités full-stack avec le système de design Metallic Laser UI, animations GSAP et backend Laravel.',
+            'tech' => '["Laravel 11","Tailwind CSS","GSAP","Livewire"]',
+        ],
+        'abiooc' => [
+            'name' => 'ABIOOC',
+            'description' => 'Plateforme e-commerce pour l\'association tunisienne d\'huile d\'olive bio ciblant les marchés d\'export avec support multilingue et prix de gros.',
+            'tech' => '["Laravel","Vue.js","Intégration Paiement"]',
+        ],
+        'samouha' => [
+            'name' => 'Samouha',
+            'description' => 'Plateforme e-commerce élégante pour une maison de couture haut de gamme avec galeries lookbook, système de réservation sur mesure et présentation sophistiquée de la marque.',
+            'tech' => '["Laravel","E-commerce","Système de Réservation"]',
+        ],
+        'kairouanhub' => [
+            'name' => 'Kairouan Hub',
+            'description' => 'Plateforme marketplace multi-vendeurs reliant les artisans et entreprises locales de Kairouan aux clients, avec gestion des vendeurs et systèmes de réservation.',
+            'tech' => '["Laravel","Multi-vendeur","Système de Réservation"]',
+        ],
+        'almishkat' => [
+            'name' => 'Al-Mishkat',
+            'description' => 'Plateforme e-commerce complète pour huile d\'olive bio avec panier d\'achat, système de paiement et tableau de bord admin complet.',
+            'tech' => '["Laravel","E-commerce","Panneau Admin"]',
+        ],
+        'setpa' => [
+            'name' => 'SETPA',
+            'description' => 'Identité de marque premium pour huile d\'olive, design d\'emballage et étiquettes d\'export conformes aux réglementations du marché saoudien et positionnement luxe.',
+            'tech' => '["Branding","Canva Pro","Emballage Export"]',
+        ],
+    ],
     'tabs' => [
         'all' => 'TOUT',
         'webdev' => 'DÉVELOPPEMENT WEB',

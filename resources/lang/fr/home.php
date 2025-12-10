@@ -3,8 +3,11 @@
 return [
     'meta' => [
         'title' => 'Développeur Full‑Stack & Consultant IA',
-        'description' => 'Je crée des sites Laravel premium et des expériences propulsées par l’IA, rapides, accessibles et axées résultats.',
+        'description' => 'Je crée des sites Laravel premium et des expériences propulsées par l'IA, rapides, accessibles et axées résultats.',
     ],
+    'meta_description' => 'Développeur Laravel full-stack senior livrant des plateformes web alimentées par l\'IA, du branding et de la croissance pour les fondateurs ambitieux en Tunisie et dans le Golfe.',
+    'page_title' => 'Studio Laravel & IA Full-Stack',
+    'og_title' => 'Solutions Laravel & IA',
     'hero' => [
         'title' => 'Construisez des produits élégants et rapides',
         'subtitle' => 'Laravel • Livewire • Tailwind • Intégrations IA',

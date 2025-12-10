@@ -12,6 +12,38 @@ return [
         'ai' => 'AI & AUTOMATION',
     ],
     'title_old' => 'Portfolio',
+    'projects' => [
+        'zindev' => [
+            'name' => 'ZINDEV Portfolio',
+            'description' => 'Modern portfolio website showcasing full-stack capabilities with Metallic Laser UI design system, GSAP animations, and Laravel backend.',
+            'tech' => '["Laravel 11","Tailwind CSS","GSAP","Livewire"]',
+        ],
+        'abiooc' => [
+            'name' => 'ABIOOC',
+            'description' => 'E-commerce platform for Tunisian organic olive oil association targeting export markets with multilingual support and wholesale pricing.',
+            'tech' => '["Laravel","Vue.js","Payment Integration"]',
+        ],
+        'samouha' => [
+            'name' => 'Samouha',
+            'description' => 'Elegant e-commerce platform for a premium couture house featuring lookbook galleries, custom tailoring booking system, and sophisticated brand presentation.',
+            'tech' => '["Laravel","E-commerce","Booking System"]',
+        ],
+        'kairouanhub' => [
+            'name' => 'Kairouan Hub',
+            'description' => 'Multi-vendor marketplace platform connecting local artisans and businesses in Kairouan with customers, featuring vendor management and booking systems.',
+            'tech' => '["Laravel","Multi-vendor","Booking System"]',
+        ],
+        'almishkat' => [
+            'name' => 'Al-Mishkat',
+            'description' => 'Full-featured e-commerce platform for organic olive oil with shopping cart, checkout system, and comprehensive admin dashboard.',
+            'tech' => '["Laravel","E-commerce","Admin Panel"]',
+        ],
+        'setpa' => [
+            'name' => 'SETPA',
+            'description' => 'Premium olive oil brand identity, packaging design, and export labels compliant with Saudi market regulations and luxury positioning.',
+            'tech' => '["Branding","Canva Pro","Export Packaging"]',
+        ],
+    ],
     'tabs' => [
         'all' => 'ALL',
         'webdev' => 'WEB DEVELOPMENT',

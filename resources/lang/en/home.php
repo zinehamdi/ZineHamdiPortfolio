@@ -5,6 +5,9 @@ return [
         'title' => 'Full‑Stack Web Developer & Project Manager',
         'description' => 'I build scalable Laravel + Vue applications, integrate AI automation, and manage projects end‑to‑end for startups and small businesses.',
     ],
+    'meta_description' => 'Senior full-stack Laravel developer delivering AI-enabled web platforms, branding, and growth for ambitious founders across Tunisia and the Gulf.',
+    'page_title' => 'Full-Stack Laravel & AI Studio',
+    'og_title' => 'Laravel & AI Solutions',
     'hero' => [
         'title' => 'Build fast, elegant products',
         'subtitle' => 'Laravel • Livewire • Tailwind • AI integrations',

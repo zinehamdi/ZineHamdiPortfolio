@@ -10,9 +10,9 @@
 	}
 @endphp
 
-@section('title', __('common.brand').' | Full-Stack Laravel & AI Studio')
+@section('title', __('common.brand').' | '.__('home.page_title'))
 @section('meta_description', $metaDescription)
-@section('og_title', __('common.brand').' | Laravel & AI Solutions')
+@section('og_title', __('common.brand').' | '.__('home.og_title'))
 @section('og_description', $metaDescription)
 @section('og_image', $ogImagePath)
 
