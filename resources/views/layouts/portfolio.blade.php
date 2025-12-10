@@ -26,6 +26,10 @@
     @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ url('/en'.($tail ? '/'.$tail : '')) }}" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/zindev/ZINDEVLogo.svg') }}">
+    <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
+
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ str_replace('_','-',app()->getLocale()) }}">
