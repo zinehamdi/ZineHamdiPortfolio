@@ -8,7 +8,8 @@
         $pageDesc = trim($__env->yieldContent('meta_description')) ?: __('nav.meta_description');
         $ogTitle = trim($__env->yieldContent('og_title')) ?: $pageTitle;
         $ogDesc = trim($__env->yieldContent('og_description')) ?: $pageDesc;
-        $ogImage = trim($__env->yieldContent('og_image')) ?: asset('favicon.ico');
+        // Use ZINDEV logo as default OG image
+        $ogImage = trim($__env->yieldContent('og_image')) ?: asset('images/zindev/ZINDEVLogo.svg');
     @endphp
     <title>{{ $pageTitle }}</title>
     <meta name="description" content="{{ $pageDesc }}">

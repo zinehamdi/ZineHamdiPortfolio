@@ -1,9 +1,16 @@
 @extends('layouts.portfolio')
 
 @php
-	$ogImagePath = file_exists(public_path('images/og/bgPortfolioImage.webp'))
-		? asset('images/og/bgPortfolioImage.webp')
-		: (file_exists(public_path('images/home.jpg')) ? asset('images/home.jpg') : asset('favicon.ico'));
+	// Use ZINDEV logo as primary OG image for social media
+	$ogImagePath = asset('images/zindev/ZINDEVLogo.svg');
+	
+	// Fallback to other images if logo doesn't exist
+	if (!file_exists(public_path('images/zindev/ZINDEVLogo.svg'))) {
+		$ogImagePath = file_exists(public_path('images/og/bgPortfolioImage.webp'))
+			? asset('images/og/bgPortfolioImage.webp')
+			: (file_exists(public_path('images/home.jpg')) ? asset('images/home.jpg') : asset('favicon.ico'));
+	}
+	
 	$metaDescription = __('home.meta_description');
 	if ($metaDescription === 'home.meta_description') {
 		$metaDescription = 'Senior full-stack Laravel developer delivering AI-enabled web platforms, branding, and growth for ambitious founders across Tunisia and the Gulf.';
