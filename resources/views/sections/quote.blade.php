@@ -3,11 +3,11 @@
         <div class="text-center mb-12" data-animate="quote-header">
             <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-mlp-pill mlp-glass-subtle border border-mlp-border-subtle/60">
                 <span class="w-2 h-2 bg-brand-accent rounded-full"></span>
-                <span class="text-brand-accent text-sm font-mono font-bold">Start Your Project</span>
+                <span class="text-brand-accent text-sm font-mono font-bold">{{ __('quote.section_label') }}</span>
             </div>
-            <h2 class="section-title mb-4 text-white">Request Your Project Quote</h2>
+            <h2 class="section-title mb-4 text-white">{{ __('quote.title') }}</h2>
             <p class="text-white/70 max-w-2xl mx-auto text-lg">
-                Share your project requirements and I'll provide a detailed estimate with timeline and deliverables.
+                {{ __('quote.subtitle') }}
             </p>
         </div>
 

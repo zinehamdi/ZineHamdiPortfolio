@@ -1,7 +1,10 @@
 <?php
 
 return [
-    'rate_limit' => 'Trop de tentatives. Réessayez plus tard.',
+    'section_label' => 'Démarrez votre projet',
+    'title' => 'Demandez votre devis de projet',
+    'subtitle' => 'Partagez les exigences de votre projet et je vous fournirai une estimation détaillée avec calendrier et livrables.',
+    'rate_limit' => 'Trop de tentatives. Veuillez réessayer plus tard.',
     'agree_required' => 'Vous devez accepter les conditions.',
     'needs_required' => 'Veuillez sélectionner au moins un service.',
     'business' => [

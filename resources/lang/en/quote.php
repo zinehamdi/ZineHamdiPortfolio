@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'section_label' => 'Start Your Project',
+    'title' => 'Request Your Project Quote',
+    'subtitle' => 'Share your project requirements and I\'ll provide a detailed estimate with timeline and deliverables.',
     'rate_limit' => 'Too many attempts. Please try again later.',
     'agree_required' => 'You must accept the terms.',
     'needs_required' => 'Please select at least one service.',
