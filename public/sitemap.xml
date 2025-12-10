@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Home Page - English (Default) -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Home Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Home Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Services Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#services</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#services"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#services"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#services"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Services Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#services</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#services"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#services"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#services"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Services Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#services</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#services"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#services"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#services"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio/Projects - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#projects</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#projects"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#projects"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#projects"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio/Projects - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#projects</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#projects"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#projects"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#projects"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio/Projects - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#projects</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#projects"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#projects"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#projects"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#about"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#about"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#about"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- About Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#about"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#about"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#about"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- About Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#about"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#about"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#about"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Pricing Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#pricing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#pricing"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#pricing"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#pricing"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Pricing Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#pricing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#pricing"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#pricing"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#pricing"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Pricing Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#pricing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#pricing"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#pricing"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#pricing"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Quote/Contact Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#quote</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#quote"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#quote"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#quote"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Quote/Contact Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#quote</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#quote"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#quote"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#quote"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Quote/Contact Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#quote</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#quote"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#quote"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#quote"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#blog</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#blog"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#blog"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#blog"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Blog Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#blog</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#blog"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#blog"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#blog"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Blog Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#blog</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#blog"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#blog"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#blog"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page - English -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/en#contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#contact"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#contact"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#contact"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page - French -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/fr#contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#contact"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#contact"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#contact"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page - Arabic -->
+    <url>
+        <loc>https://zindev.kairouanhub.com/ar#contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zindev.kairouanhub.com/en#contact"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://zindev.kairouanhub.com/fr#contact"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://zindev.kairouanhub.com/ar#contact"/>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

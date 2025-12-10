@@ -11,8 +11,10 @@
         // Use ZINDEV logo as default OG image
         $ogImage = trim($__env->yieldContent('og_image')) ?: asset('images/zindev/ZINDEVLogo.svg');
     @endphp
-    <title>{{ $pageTitle }}</title>
+    <title>{!! $pageTitle !!}</title>
     <meta name="description" content="{{ $pageDesc }}">
+    <meta name="author" content="{{ __('common.brand') }}">
+    <meta name="keywords" content="Laravel Developer, Full Stack Developer, AI Integration, Web Development Tunisia, PHP Developer, Vue.js, Tailwind CSS, Olive Oil Branding, Scrum Master">
     <link rel="canonical" href="@yield('canonical', url()->current())">
 
     @php
@@ -34,12 +36,12 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ str_replace('_','-',app()->getLocale()) }}">
     <meta property="og:site_name" content="{{ __('common.brand') }}">
-    <meta property="og:title" content="{{ $ogTitle }}">
+    <meta property="og:title" content="{!! $ogTitle !!}">
     <meta property="og:description" content="{{ $ogDesc }}">
     <meta property="og:image" content="{{ $ogImage }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $ogTitle }}">
+    <meta name="twitter:title" content="{!! $ogTitle !!}">
     <meta name="twitter:description" content="{{ $ogDesc }}">
     <meta name="twitter:image" content="{{ $ogImage }}">
 
@@ -65,7 +67,7 @@
             '@type' => 'Organization',
             'name' => __('common.brand'),
             'url' => url('/'),
-            'logo' => asset('favicon.ico'),
+            'logo' => asset('images/zindev/ZINDEVLogo.svg'),
             'sameAs' => array_values(array_filter([
                 config('site.social.github'),
                 config('site.social.linkedin'),
@@ -174,9 +176,9 @@
                 @php 
                     $navItems = [
                         ['key' => 'home', 'label' => __('common.nav.home') ?: 'HOME', 'icon' => 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'],
+                        ['key' => 'about', 'label' => __('common.nav.about') ?: 'ABOUT', 'icon' => 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'],
                         ['key' => 'services', 'label' => __('common.nav.services') ?: 'SERVICES', 'icon' => 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'],
                         ['key' => 'projects', 'label' => __('common.nav.portfolio') ?: 'PORTFOLIO', 'icon' => 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z'],
-                        ['key' => 'about', 'label' => __('common.nav.about') ?: 'ABOUT', 'icon' => 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'],
                         ['key' => 'pricing', 'label' => __('common.nav.pricing') ?: 'PRICING', 'icon' => 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'],
                         ['key' => 'quote', 'label' => __('common.nav.quote') ?: 'GET QUOTE', 'icon' => 'M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z'],
                         ['key' => 'blog', 'label' => __('common.nav.blog') ?: 'BLOG', 'icon' => 'M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z'],

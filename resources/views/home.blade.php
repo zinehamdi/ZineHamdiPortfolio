@@ -29,12 +29,11 @@
 		@include('sections.metallic-hero')
 	</div>
 	@include('sections.about')
-	@include('sections.case-studies', ['sectionId' => 'case-studies', 'headingId' => 'case-studies-heading'])
-	<div id="projects">
-		@include('sections.metallic-projects')
-	</div>
 	<div id="services">
 		@include('sections.premium-services')
+	</div>
+	<div id="projects">
+		@include('sections.metallic-projects')
 	</div>
 	@include('sections.pricing')
 	@include('sections.quote')

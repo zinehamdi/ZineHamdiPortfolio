@@ -4,8 +4,8 @@ return [
     'admin_email' => env('ADMIN_EMAIL', 'Zinehamdi8@gmail.com'),
     'whatsapp_number' => env('WHATSAPP_NUMBER', '+21625777926'),
     'social' => [
-        'github' => env('SOCIAL_GITHUB', ''),
-        'linkedin' => env('SOCIAL_LINKEDIN', ''),
+        'github' => env('SOCIAL_GITHUB', 'https://github.com/zinehamdi'),
+        'linkedin' => env('SOCIAL_LINKEDIN', 'https://linkedin.com/in/zinehamdi'),
         'instagram' => env('SOCIAL_INSTAGRAM', ''),
     ],
     // Configurable blog/promo card on hero right panel
