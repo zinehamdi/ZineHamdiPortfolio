@@ -135,6 +135,8 @@ Route::get('/sitemap.xml', function () {
 });
 
 // Legacy non-localized routes (optional fallbacks). Limit to GET to avoid redirecting POST submissions.
+Route::get('/', fn() => redirect('/'.app()->getLocale()));
+Route::get('/blog', fn() => redirect('/'.app()->getLocale().'/blog'));
 Route::get('/services', fn() => redirect('/'.app()->getLocale().'/services'));
 Route::get('/packages', fn() => redirect('/'.app()->getLocale().'/packages'));
 Route::get('/contact', fn() => redirect('/'.app()->getLocale().'/contact'));

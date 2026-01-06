@@ -53,6 +53,60 @@
         <p class="text-white/70 max-w-2xl mx-auto text-lg">{{ __('blog.subtitle') }}</p>
       </header>
 
+      {{-- Featured Promo Section --}}
+      @php
+        $promoData = \App\Support\PromoCard::current();
+      @endphp
+      @if($promoData['title'])
+        <div class="mb-16">
+          <div class="relative group">
+            {{-- Animated glow border --}}
+            <div
+              class="absolute -inset-0.5 bg-gradient-to-r from-[#00FF88] via-[#7B61FF] to-[#00BFFF] rounded-2xl opacity-50 blur group-hover:opacity-75 transition-all duration-500">
+            </div>
+
+            <div class="relative mlp-card overflow-hidden rounded-2xl border border-white/10">
+              <div class="grid md:grid-cols-2 gap-0">
+                {{-- Promo Image --}}
+                <div class="relative h-64 md:h-80 overflow-hidden">
+                  <img src="{{ $promoData['image_url'] }}" alt="{{ $promoData['title'] }}"
+                    class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#0a0a0f]/90"></div>
+                  <div class="absolute top-4 left-4">
+                    <span
+                      class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#7B61FF]/90 backdrop-blur text-white text-xs font-bold uppercase tracking-wider">
+                      <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                      </svg>
+                      Featured
+                    </span>
+                  </div>
+                </div>
+
+                {{-- Promo Content --}}
+                <div class="p-8 flex flex-col justify-center">
+                  <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                    {{ $promoData['title'] }}
+                  </h2>
+                  <p class="text-white/70 mb-6 line-clamp-3">
+                    {{ $promoData['text'] }}
+                  </p>
+                  @if($promoData['link'])
+                    <a href="{{ $promoData['link'] }}"
+                      class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#00FF88] to-[#00BFFF] text-[#0a0a0f] font-bold text-sm hover:shadow-[0_0_30px_rgba(0,255,136,0.5)] transition-all duration-300 w-fit">
+                      {{ $promoData['cta'] ?? __('common.learn_more') }}
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  @endif
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      @endif
+
       @if($posts->isEmpty())
         <!-- No Posts Yet -->
         <div class="max-w-2xl mx-auto">
