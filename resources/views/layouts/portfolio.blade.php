@@ -268,10 +268,11 @@ c           om/in/zinehamdi" target="_blank" rel="noopener noreferrer" aria-labe
     <header class="fixed left-0 right-0 top-0 z-30 glass-card rounded-none h-16 flex items-center px-4 sm:px-6 lg:pl-80 gap-4 border-b border-white/5">
         <!-- Mobile hamburger -->
 
-                       <button id="mobile-sidebar-toggle" class="lg:hidden inline-flex items-center justify-center w-10 h-1
-                    0 rounded-lg border border-white/10 text-[#A0A0A0] h
-                       over:text-[#00FF88] hover:border-[#00FF88]/50 transition-all" aria-label="Toggle navigation" aria-expande d=
-                "false" aria-controls="sidebar">
+        <button id="mobile-sidebar-toggle" 
+            class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 text-[#A0A0A0] hover:text-[#00FF88] hover:border-[#00FF88]/50 transition-all" 
+            aria-label="Toggle navigation" 
+            aria-expanded="false" 
+            aria-controls="sidebar">
             <svg id="icon-hamburger" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
             <svg id="icon-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6"/></svg>
         </button>
@@ -351,7 +352,7 @@ c           om/in/zinehamdi" target="_blank" rel="noopener noreferrer" aria-labe
                 iconHamburger.classList.remove('hidden');
                 iconClose.classList.add('hidden');
                 if (headerAvatar) headerAvatar.classList.remove('opacity-0');
-                if (mobileToggle) mobileToggle.setAttri bute('aria-expanded', 'false');
+                if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
                 isMobileOpen = false;
             }
 
