@@ -14,15 +14,18 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 use App\Models\ContactMessage;
 use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\BlogController;
 use App\Mail\ContactMessage as ContactMessageMailable;
+use App\Models\Post;
 
-Route::group(['prefix' => '{locale?}'], function () {
+Route::prefix('{locale}')->whereIn('locale', ['ar', 'en', 'fr'])->group(function () {
     Route::get('/', fn () => view('home'))->name('home');
     Route::get('/about', fn () => view('about'))->name('about');
     Route::get('/services', fn () => view('services'))->name('services');
     Route::get('/packages', fn () => view('packages'))->name('packages');
     Route::get('/portfolio', fn () => view('portfolio'))->name('portfolio');
-    Route::get('/blog', fn () => view('blog'))->name('blog');
+    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+    Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9][a-z0-9\-]*[a-z0-9]')->name('blog.show');
     Route::get('/contact', fn () => view('contact'))->name('contact');
     Route::get('/quote', function (Request $request) {
         $pkg = $request->query('package');
@@ -93,7 +96,7 @@ Route::group(['prefix' => '{locale?}'], function () {
         Log::info('Contact finished, redirecting back with success');
         return back()->with('status', __('contact.form.success'));
     })->name('contact.submit');
-})->where(['locale' => 'ar|en|fr']);
+});
 
 Route::get('lang/{locale}', function ($locale) {
     if (in_array($locale, ['ar', 'en', 'fr'])) {
@@ -313,4 +316,78 @@ Route::middleware('admin.auth')->prefix('admin')->group(function () {
         $msg = ContactMessage::findOrFail($id);
         return view('admin.message-show', compact('msg'));
     })->name('admin.inbox.show');
+
+    // Blog Posts Management
+    Route::get('/posts', function () {
+        $posts = Post::latest()->paginate(20);
+        return view('admin.posts.index', compact('posts'));
+    })->name('admin.posts');
+
+    Route::get('/posts/create', function () {
+        return view('admin.posts.form', ['post' => null]);
+    })->name('admin.posts.create');
+
+    Route::post('/posts', function (Request $request) {
+        $data = $request->validate([
+            'title' => 'required|string|max:255',
+            'excerpt' => 'nullable|string|max:500',
+            'body' => 'required|string',
+            'featured_image' => 'nullable|image|max:5120',
+            'category' => 'nullable|string|max:100',
+            'status' => 'required|in:draft,published',
+            'locale' => 'required|in:en,fr,ar',
+        ]);
+
+        $data['slug'] = Post::generateSlug($data['title']);
+        
+        if ($request->hasFile('featured_image')) {
+            $path = $request->file('featured_image')->store('posts', 'public');
+            $data['featured_image'] = 'storage/' . $path;
+        }
+
+        if ($data['status'] === 'published') {
+            $data['published_at'] = now();
+        }
+
+        Post::create($data);
+        return redirect()->route('admin.posts')->with('status', 'Post created successfully');
+    })->name('admin.posts.store');
+
+    Route::get('/posts/{id}/edit', function ($id) {
+        $post = Post::findOrFail($id);
+        return view('admin.posts.form', compact('post'));
+    })->name('admin.posts.edit');
+
+    Route::put('/posts/{id}', function (Request $request, $id) {
+        $post = Post::findOrFail($id);
+        
+        $data = $request->validate([
+            'title' => 'required|string|max:255',
+            'excerpt' => 'nullable|string|max:500',
+            'body' => 'required|string',
+            'featured_image' => 'nullable|image|max:5120',
+            'category' => 'nullable|string|max:100',
+            'status' => 'required|in:draft,published',
+            'locale' => 'required|in:en,fr,ar',
+        ]);
+
+        if ($request->hasFile('featured_image')) {
+            $path = $request->file('featured_image')->store('posts', 'public');
+            $data['featured_image'] = 'storage/' . $path;
+        }
+
+        // Set published_at when first published
+        if ($data['status'] === 'published' && !$post->published_at) {
+            $data['published_at'] = now();
+        }
+
+        $post->update($data);
+        return redirect()->route('admin.posts')->with('status', 'Post updated successfully');
+    })->name('admin.posts.update');
+
+    Route::delete('/posts/{id}', function ($id) {
+        $post = Post::findOrFail($id);
+        $post->delete();
+        return redirect()->route('admin.posts')->with('status', 'Post deleted successfully');
+    })->name('admin.posts.destroy');
 });

@@ -13,7 +13,7 @@
   <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-accent/5 blur-3xl pointer-events-none"></div>
   <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-brand-primary/10 blur-3xl pointer-events-none"></div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
 
     <!-- Header with integrated image - Horizontal Layout -->
     <div class="mlp-glass-subtle rounded-mlp-md border border-mlp-border-subtle/60 overflow-hidden mb-8"
@@ -22,7 +22,7 @@
         <!-- Profile Image -->
         <div class="relative group/img flex-shrink-0">
           <div
-            class="w-[280px] h-[360px] overflow-hidden rounded-xl border border-mlp-border-subtle/60 shadow-mlp-laser-green">
+            class="w-[220px] h-[280px] overflow-hidden rounded-xl border border-mlp-border-subtle/60 shadow-mlp-laser-green">
             <div
               class="absolute inset-0 mlp-laser-orbit group-hover/img:opacity-80 transition-opacity duration-500 z-10">
             </div>

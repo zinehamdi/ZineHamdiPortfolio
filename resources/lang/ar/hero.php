@@ -15,6 +15,7 @@ return [
     'description_business' => 'حلول الأعمال',
     'cta_work' => 'عرض أعمالي',
     'cta_contact' => 'تواصل معي',
+    'cta_blog' => 'اقرأ مدونتي',
     'stats' => [
         'years' => '5+',
         'years_label' => 'سنوات',

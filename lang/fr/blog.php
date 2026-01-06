@@ -5,6 +5,13 @@ return [
     'subtitle' => 'Guides pratiques sur Laravel, l\'intégration IA et les stratégies de développement web.',
     'cta_all' => 'Voir Tous les Articles',
     'cta_read' => 'Lire l\'Article',
+    'back_to_blog' => 'Retour au Blog',
+    'more_articles' => 'Plus d\'Articles',
+    'share' => 'Partager :',
+    'min_read' => 'min de lecture',
+    'coming_soon' => 'Bientôt Disponible',
+    'coming_soon_text' => 'Je travaille sur des articles passionnants sur le développement web, l\'intégration IA et la gestion de projet. Restez à l\'écoute !',
+    'back_to_home' => 'Retour à l\'Accueil',
     'articles' => [
         [
             'category' => 'Développement',

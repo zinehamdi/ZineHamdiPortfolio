@@ -1,54 +1,136 @@
 @extends('layouts.portfolio')
 
 @section('title', __('common.nav.blog'))
-@section('meta_description', 'Articles and notes.')
+@section('meta_description', __('blog.subtitle'))
 
 @section('content')
-  <section class="py-16 lg:py-24" aria-labelledby="blog-heading">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <section id="blog" class="py-16 lg:py-24 mlp-bg-root" aria-labelledby="blog-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
       <!-- Section Header -->
       <header class="mb-12 text-center">
-        <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-[#12121a] border border-[#00FF88]/20">
-          <span class="w-2 h-2 bg-[#7B61FF] rounded-full"></span>
-          <span class="text-[#A0A0A0] text-sm font-mono">blog.posts</span>
-        </div>
-        <h1 id="blog-heading" class="section-title mb-4">{{ __('common.nav.blog') }}</h1>
-        <p class="section-subtitle mx-auto">Insights, tutorials, and updates from my development journey</p>
-      </header>
+        <!-- Hero Badge with Animated Glow -->
+        <div class="relative inline-block mb-6">
+          <!-- Animated glow background -->
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-[#00FF88] via-[#7B61FF] to-[#00BFFF] rounded-full opacity-40 blur-lg animate-pulse">
+          </div>
+          <div
+            class="absolute -inset-0.5 bg-gradient-to-r from-[#00FF88] via-[#7B61FF] to-[#00BFFF] rounded-full opacity-60">
+          </div>
 
-      <!-- Coming Soon Card -->
-      <div class="max-w-2xl mx-auto">
-        <div class="glass-card glass-card-hover p-8 text-center">
-          <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-[#7B61FF]/20 flex items-center justify-center">
-            <svg class="w-10 h-10 text-[#7B61FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <!-- Badge content -->
+          <div
+            class="relative inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#0a0a0f]/95 backdrop-blur-xl border border-white/10">
+            <!-- Animated pulse dot -->
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF88] opacity-75"></span>
+              <span
+                class="relative inline-flex rounded-full h-3 w-3 bg-[#00FF88] shadow-[0_0_12px_rgba(0,255,136,0.8)]"></span>
+            </span>
+
+            <!-- Icon -->
+            <svg class="w-5 h-5 text-[#7B61FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
             </svg>
-          </div>
-          <h2 class="text-2xl font-bold text-[#E8E8E8] mb-3">Coming Soon</h2>
-          <p class="text-[#A0A0A0] mb-6">I'm working on exciting articles about web development, AI integration, and
-            project management. Stay tuned!</p>
 
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('portfolio', ['locale' => app()->getLocale()]) }}"
-              class="btn-outline inline-flex items-center justify-center gap-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              <span>Back to Portfolio</span>
-            </a>
-            <a href="{{ route('portfolio', ['locale' => app()->getLocale()]) }}#contact"
-              class="btn-primary inline-flex items-center justify-center gap-2">
-              <span>Get Notified</span>
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-            </a>
+            <!-- Text with gradient -->
+            <span
+              class="text-sm font-bold tracking-wider uppercase bg-gradient-to-r from-[#00FF88] via-[#7B61FF] to-[#00BFFF] bg-clip-text text-transparent">
+              Technical Articles
+            </span>
+
+            <!-- Decorative right icon -->
+            <svg class="w-4 h-4 text-[#00BFFF] animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </div>
         </div>
-      </div>
+
+        <h1 id="blog-heading" class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">{{ __('blog.title') }}
+        </h1>
+        <p class="text-white/70 max-w-2xl mx-auto text-lg">{{ __('blog.subtitle') }}</p>
+      </header>
+
+      @if($posts->isEmpty())
+        <!-- No Posts Yet -->
+        <div class="max-w-2xl mx-auto">
+          <div class="mlp-card mlp-metal-sheen p-8 text-center border border-mlp-border-subtle/70">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-[#7B61FF]/20 flex items-center justify-center">
+              <svg class="w-10 h-10 text-[#7B61FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white mb-3">{{ __('blog.coming_soon') }}</h2>
+            <p class="text-white/60 mb-6">{{ __('blog.coming_soon_text') }}</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
+                class="mlp-glass-subtle border border-mlp-border-subtle/70 hover:border-mlp-gold/70 px-6 py-3 text-sm font-semibold text-white rounded-mlp-md transition-all hover:shadow-mlp-laser-green inline-flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>{{ __('blog.back_to_home') }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      @else
+        <!-- Posts Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          @foreach($posts as $post)
+            <a href="{{ route('blog.show', ['locale' => app()->getLocale(), 'slug' => $post->slug]) }}"
+              class="block mlp-card mlp-metal-sheen overflow-hidden border border-mlp-border-subtle/70 hover:border-mlp-gold/70 hover:shadow-mlp-laser-green transition-all duration-300 group cursor-pointer">
+              <article>
+                <!-- Featured Image -->
+                <div class="h-48 relative overflow-hidden">
+                  @if($post->featured_image)
+                    <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}"
+                      class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-700">
+                  @else
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#7B61FF]/30 to-[#00FF88]/20"></div>
+                  @endif
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div
+                    class="absolute top-4 left-4 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-accent border border-brand-accent/30 shadow-[0_0_15px_rgba(0,255,136,0.4)]">
+                    {{ $post->category }}
+                  </div>
+                </div>
+
+                <!-- Content -->
+                <div class="p-6">
+                  <div class="flex items-center gap-3 text-sm text-gray-500 mb-2">
+                    <span>{{ $post->published_at?->format('M d, Y') }}</span>
+                    <span>•</span>
+                    <span>{{ $post->reading_time }} {{ __('blog.min_read') }}</span>
+                  </div>
+                  <h2 class="text-xl font-bold text-white mb-3 group-hover:text-brand-accent transition-colors">
+                    {{ $post->title }}
+                  </h2>
+                  <p class="text-white/60 text-sm mb-4 line-clamp-2">
+                    {{ $post->excerpt ?? Str::limit(strip_tags($post->body), 120) }}
+                  </p>
+                  <span class="inline-flex items-center text-brand-accent font-bold text-sm group-hover:underline">
+                    {{ __('blog.cta_read') }}
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </div>
+              </article>
+            </a>
+          @endforeach
+        </div>
+
+        <!-- Pagination -->
+        @if($posts->hasPages())
+          <div class="mt-12 flex justify-center">
+            {{ $posts->links() }}
+          </div>
+        @endif
+      @endif
 
     </div>
   </section>

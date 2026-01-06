@@ -15,6 +15,7 @@ return [
     'description_business' => 'business solutions',
     'cta_work' => 'VIEW MY WORK',
     'cta_contact' => 'Contact Me',
+    'cta_blog' => 'Read My Blog',
     'stats' => [
         'years' => '5+',
         'years_label' => 'Years',

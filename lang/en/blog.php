@@ -5,6 +5,13 @@ return [
     'subtitle' => 'Practical guides on Laravel, AI integration, and web development strategies.',
     'cta_all' => 'View All Articles',
     'cta_read' => 'Read Article',
+    'back_to_blog' => 'Back to Blog',
+    'more_articles' => 'More Articles',
+    'share' => 'Share:',
+    'min_read' => 'min read',
+    'coming_soon' => 'Coming Soon',
+    'coming_soon_text' => 'I\'m working on exciting articles about web development, AI integration, and project management. Stay tuned!',
+    'back_to_home' => 'Back to Home',
     'articles' => [
         [
             'category' => 'Development',
