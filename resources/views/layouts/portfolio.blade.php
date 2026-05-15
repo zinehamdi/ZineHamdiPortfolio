@@ -10,7 +10,7 @@
         $ogTitle = trim($__env->yieldContent('og_title')) ?: $pageTitle;
         $ogDesc = trim($__env->yieldContent('og_description')) ?: $pageDesc;
         // Use ZINDEV logo as default OG image
-        $ogImage = trim($__env->yieldContent('og_image')) ?: asset('images/zindev/ZINDEVLogo.svg');
+        $ogImage = trim($__env->yieldContent('og_image')) ?: asset('images/zindev/zindevlogo3d.png');
     @endphp
     <title>{!! $pageTitle !!}</title>
     <meta name="description" content="{{ $pageDesc }}">
@@ -31,7 +31,7 @@
     <link rel="alternate" hreflang="x-default" href="{{ url('/en' . ($tail ? '/' . $tail : '')) }}" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="{{ asset('images/zindev/ZINDEVLogo.svg') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/zindev/zindevlogo3d.png') }}">
     <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
 
     <!-- Open Graph / Twitter -->
@@ -75,7 +75,7 @@
             '@type' => 'Organization',
             'name' => __('common.brand'),
             'url' => url('/'),
-            'logo' => asset('images/zindev/ZINDEVLogo.svg'),
+            'logo' => asset('images/zindev/zindevlogo3d.png'),
             'sameAs' => array_values(array_filter([
                 config('site.social.github'),
                 config('site.social.linkedin'),

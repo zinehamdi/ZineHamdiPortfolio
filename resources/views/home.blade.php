@@ -2,10 +2,10 @@
 
 @php
 	// Use ZINDEV logo as primary OG image for social media
-	$ogImagePath = asset('images/zindev/ZINDEVLogo.svg');
+	$ogImagePath = asset('images/zindev/zindevlogo3d.png');
 	
 	// Fallback to other images if logo doesn't exist
-	if (!file_exists(public_path('images/zindev/ZINDEVLogo.svg'))) {
+	if (!file_exists(public_path('images/zindev/zindevlogo3d.png'))) {
 		$ogImagePath = file_exists(public_path('images/og/bgPortfolioImage.webp'))
 			? asset('images/og/bgPortfolioImage.webp')
 			: (file_exists(public_path('images/home.jpg')) ? asset('images/home.jpg') : asset('favicon.ico'));
