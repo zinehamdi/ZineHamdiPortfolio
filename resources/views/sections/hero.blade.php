@@ -9,7 +9,7 @@
 @php
   $bgImage = 'images/og/bgPortfolioImage.webp';
   if (!file_exists(public_path($bgImage))) {
-    $bgImage = (file_exists(public_path('images/home.jpg')) ? 'images/home.jpg' : (file_exists(public_path('images/zinedev.png')) ? 'images/zinedev.png' : 'favicon.ico'));
+    $bgImage = (file_exists(public_path('images/home.jpg')) ? 'images/home.jpg' : (file_exists(public_path('images/zindev/zindevlogo3d.png')) ? 'images/zindev/zindevlogo3d.png' : 'favicon.ico'));
   }
 @endphp
 <section id="home" class="relative min-h-screen flex items-center pt-20 lg:pt-0 bg-center bg-cover"

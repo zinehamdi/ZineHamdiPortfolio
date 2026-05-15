@@ -162,7 +162,7 @@
             'images/portfoliopicture/profili2.jpg',
             'images/portfoliopicture/IMG_3796.jpg',
             'images/portfoliopicture/IMG_3781.JPG',
-            'images/zindev.png',
+            'images/zindev/zindevlogo3d.png',
         ];
         foreach ($profileCandidates as $img) {
             if (file_exists(public_path($img))) {

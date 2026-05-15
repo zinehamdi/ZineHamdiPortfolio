@@ -55,7 +55,7 @@
                 '@type' => 'Organization',
                 'name' => __('common.brand'),
                 'url' => url('/'),
-                'logo' => (file_exists(public_path('images/zinedev.png')) ? asset('images/zinedev.png') : asset('favicon.ico')),
+                'logo' => (file_exists(public_path('images/zindev/zindevlogo3d.png')) ? asset('images/zindev/zindevlogo3d.png') : asset('favicon.ico')),
                 'sameAs' => array_values(array_filter([
                     config('site.social.github'),
                     config('site.social.linkedin'),

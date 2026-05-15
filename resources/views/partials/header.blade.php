@@ -2,7 +2,7 @@
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
   @php $loc = app()->getLocale(); @endphp
   @php
-    $brandLogo = file_exists(public_path('images/zinedev.png')) ? asset('images/zinedev.png') : asset('favicon.ico');
+    $brandLogo = file_exists(public_path('images/zindev/zindevlogo3d.png')) ? asset('images/zindev/zindevlogo3d.png') : asset('favicon.ico');
   @endphp
   <a href="{{ url('/'.$loc) }}" class="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70" aria-label="Home">
       <img src="{{ $brandLogo }}" alt="ZINDEV logo" class="h-9 w-9 rounded-xl object-contain bg-white" loading="lazy">

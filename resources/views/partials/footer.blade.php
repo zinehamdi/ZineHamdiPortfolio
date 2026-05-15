@@ -1,7 +1,7 @@
 <div class="mt-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10 grid gap-6 md:grid-cols-3 text-[#1b1b18]/90">
     <div>
-      @php($brandLogo = file_exists(public_path('images/zinedev.png')) ? asset('images/zinedev.png') : asset('favicon.ico'))
+      @php($brandLogo = file_exists(public_path('images/zindev/zindevlogo3d.png')) ? asset('images/zindev/zindevlogo3d.png') : asset('favicon.ico'))
       <div class="flex items-center gap-3 mb-3">
         <img src="{{ $brandLogo }}" alt="ZINDEV logo" class="h-9 w-9 rounded-xl object-contain bg-white" loading="lazy">
   <span class="font-semibold">Hamdi Zine</span>
